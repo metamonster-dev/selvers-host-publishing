@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이스 메이트</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="main_logo">
+                <a href="#none">
+                    <img src="../assets/images/logo/main_logo_w.png" alt="마이스 메이트">
+                </a>
+            </h1>
+            <div class="btn_wrap">
+                <button class="my_btn"></button>
+                <button class="btn white round">대시보드</button>
+                <button class="btn blue round">AI챗봇</button>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+    
+    <!-- container -->
+    <div class="container">
+        <div class="lnb_area">
+            <div class="lnb02_wrap">
+                <div class="user_area">
+                    <div class="img">
+                        <img src="../assets/images/dummy/user_logo_dummy.png">
+                    </div>
+                    <div class="user_name">
+                        <div class="name">마인즈그라운드</div>
+                        <div class="admini">마스터</div>
+                    </div>
+                </div>
+                <button class="title_tag">행사 개설하기</button>
+                <ul class="lnb02">
+                    <li>
+                        <a href="#none" class="depth01">
+                            행사 상세설정
+                            <i class="arrow_b_icon"></i>
+                        </a>
+                        <div class="depth02_list">
+                            <a href="#none" class="depth02">기본정보</a>
+                            <a href="#none" class="depth02">상세페이지</a>
+                            <a href="#none" class="depth02">모집정보</a>
+                            <a href="#none" class="depth02">사전설문</a>
+                            <a href="#none" class="depth02">FAQ & 문의</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01 active">참가자 관리</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01">참가기업 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont_area">
+            <div class="cont_panel">
+                <div class="tit_wrap">
+                    <h3 class="fs_40">참가자 관리</h3>
+                    <a href="#none" download class="download_btn"></a>
+                </div>
+
+                <div class="table_wrap mt_55">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="160px">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>기간</th>
+                                <td>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad01" class="hide">
+                                        <label for="rad01" class="btn border_w">오늘</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad02" class="hide">
+                                        <label for="rad02" class="btn border_w">어제</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad03" class="hide" checked="">
+                                        <label for="rad03" class="btn border_w">7일</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad04" class="hide">
+                                        <label for="rad04" class="btn border_w">1개월</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad05" class="hide">
+                                        <label for="rad05" class="btn border_w">전체</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input id="date01" type="date" class="small w_104" value="2024-08-26">
+                                        <label for="date01" class="date_icon"></label>
+                                    </div>
+                                    <div class="dis_inblock">&nbsp;~&nbsp;</div>
+                                    <div class="dis_inblock">
+                                        <input id="date02" type="date" class="small w_104" value="2024-08-26">
+                                        <label for="date02" class="date_icon"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>검색</th>
+                                <td>
+                                    <div class="dis_inblock">
+                                        <select class="btn border_w">
+                                            <option value="0">신청 유형</option>
+                                        </select>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input class="small search w_548" type="text" placeholder="전체">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn_wrap gap7 mt_18">
+                    <button class="btn small light_blue">검색</button>
+                    <button class="btn small gray">초기화</button>
+                </div>
+
+                <div class="tit_wrap mt_30">
+                    <div>
+                        <h3 class="tit">
+                            <span>전체</span> 
+                            <span class="col_gray">검색결과</span>
+                            <span class="fs_16">[총 회원수 9,999명]</span>
+                        </h3>
+                        <button class="sort_btn">정렬</button>
+                    </div>
+                    <div>
+                        <button>수정</button>
+                        <button class="ml_22">삭제</button>
+                    </div>
+                </div>
+
+                <div class="table_wrap mt_22">
+                    <table class="type1">
+                        <colgroup>
+                            <col width="16px">
+                            <col width="130px">
+                            <col width="130px">
+                            <col width="130px">
+                            <col width="150px">
+                            <col width="160px">
+                            <col width="220px">
+                            <col width="*">
+                            <col width="120px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="checkbox">
+                                        <input id="t_chkAll" type="checkbox">
+                                        <label for="t_chkAll">
+                                        </label>
+                                    </div>
+                                </th>
+                                <th>신청일</th>
+                                <th>신청유형</th>
+                                <th>이름</th>
+                                <th>이메일</th>
+                                <th>휴대전화</th>
+                                <th>단체명</th>
+                                <th></th>
+                                <th>상세 보기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk01" type="checkbox">
+                                        <label for="t_chk01">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2024-01-01</td>
+                                <td>개인 신청</td>
+                                <td>김고은</td>
+                                <td>abcde@gmail.com</td>
+                                <td>010-1234-1234</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>
+                                    <button class="col_blue underline" onclick="detailPop()">상세 보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk02" type="checkbox">
+                                        <label for="t_chk02">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2024-01-01</td>
+                                <td>개인 신청</td>
+                                <td>김고은</td>
+                                <td>abcde@gmail.com</td>
+                                <td>010-1234-1234</td>
+                                <td>마인즈그라운드(주)</td>
+                                <td></td>
+                                <td>
+                                    <button class="col_blue underline" onclick="detailPop()">상세 보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk03" type="checkbox">
+                                        <label for="t_chk03">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2024-01-01</td>
+                                <td>개인 신청</td>
+                                <td>김고은</td>
+                                <td>abcde@gmail.com</td>
+                                <td>010-1234-1234</td>
+                                <td>-</td>
+                                <td></td>
+                                <td>
+                                    <button class="col_blue underline" onclick="detailPop()">상세 보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk04" type="checkbox">
+                                        <label for="t_chk04">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>2024-01-01</td>
+                                <td>개인 신청</td>
+                                <td>김고은</td>
+                                <td>abcde@gmail.com</td>
+                                <td>010-1234-1234</td>
+                                <td>마인즈그라운드(주)</td>
+                                <td></td>
+                                <td>
+                                    <button class="col_blue underline" onclick="detailPop()">상세 보기</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination mt_80">
+                    <a href="#none" class="pagi_prev"></a>
+                    <a href="#none" class="num active">1</a>
+                    <a href="#none" class="num">2</a>
+                    <a href="#none" class="num">3</a>
+                    <a href="#none" class="num">4</a>
+                    <a href="#none" class="num">5</a>
+                    <a href="#none" class="num">6</a>
+                    <a href="#none" class="num">7</a>
+                    <a href="#none" class="num">8</a>
+                    <a href="#none" class="num">9</a>
+                    <a href="#none" class="num">10</a>
+                    <a href="#none" class="pagi_next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+</div>    
+
+<!-- 상세 보기 팝업 -->
+<div class="modal_wrap detailPop" style="display:none;">
+    <div class="dim_layer"></div>
+    <div class="modal_inner">
+        <button class="modal_close"></button>
+        <div class="modal_body">
+            <div class="modal_tit">
+                사전 설문 결과
+            </div>
+            <div class="fs_18 fw_600 mt_48">신청자 정보</div>
+            <ul class="key_val_list mt_24">
+                <li>
+                    <div class="key">신청 유형</div>
+                    <div class="val">개인 신청</div>
+                </li>
+                <li>
+                    <div class="key">이름</div>
+                    <div class="val">김노은</div>
+                </li>
+                <li>
+                    <div class="key">이메일</div>
+                    <div class="val">abcd@gmail.com</div>
+                </li>
+                <li>
+                    <div class="key">휴대전화</div>
+                    <div class="val">010-1234-1234</div>
+                </li>
+                <li>
+                    <div class="key">소속</div>
+                    <div class="val">마인즈그라운드 주식회사</div>
+                </li>
+                <li>
+                    <div class="key">부서</div>
+                    <div class="val">글로벌사업부</div>
+                </li>
+                <li>
+                    <div class="key">직함</div>
+                    <div class="val">대리</div>
+                </li>
+                <li>
+                    <div class="key">성별</div>
+                    <div class="val">남자</div>
+                </li>
+            </ul>
+
+            <div class="fs_18 fw_600 mt_48">사전 설문</div>
+            
+            <div class="fs_16 fw_600 mt_16">단일 선택</div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="rad01" type="radio">
+                    <label for="rad01">
+                        옵션 1입니다.
+                    </label>
+                </div>
+            </div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="rad02" type="radio">
+                    <label for="rad02">
+                        옵션 2입니다.
+                    </label>
+                </div>
+            </div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="rad03" type="radio" checked>
+                    <label for="rad03">
+                        기타
+                    </label>
+                </div>
+            </div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="rad04" type="radio">
+                    <label for="rad04">
+                        무응답
+                    </label>
+                </div>
+            </div>
+
+            <div class="fs_16 fw_600 mt_16">다중 선택</div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="chk00_01" type="checkbox">
+                    <label for="chk00_01">
+                        옵션 1입니다.
+                    </label>
+                </div>
+            </div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="chk00_02" type="checkbox" checked>
+                    <label for="chk00_02">
+                        옵션 2입니다.
+                    </label>
+                </div>
+            </div>
+            <div clas="mt_7">
+                <div class="radio02">
+                    <input id="chk00_03" type="checkbox" checked>
+                    <label for="chk00_03">
+                        기타
+                    </label>
+                </div>
+            </div>
+
+            <div class="fs_16 fw_600 mt_20">단답/장문형</div>
+            <ul class="key_val_list mt_14 fs_14">
+                <li>
+                    <div class="val">
+                        저녁이 오면, 세상은 마치 숨을 멈춘 듯 고요해진다. 거리의 불빛들이 하나둘 켜지고, 그 불빛 속에는 따뜻한 집들의 이야기들이 스며 있다. 바람은 부드럽게 나뭇잎을 흔들고, 그 소리는 마치 오래된 친구의 속삭임처럼 들린다.<br/>
+                        길을 걷다 보면, 지나간 시간의 조각들이 내 발걸음에 맞춰 함께 걷는 듯하다. 가끔은 추억이 바람에 실려 오기도 하고, 그리움이 어깨에 살며시 내려앉기도 한다.
+                    </div>
+                </li>
+            </ul>
+
+            <div class="txt_center mt_24">
+                <a href="#none" download class="btn small light_blue w_177">참가자 엑셀 다운로드</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../assets/js/common.js"></script>
+<script>
+    function detailPop(){
+        let detailPop = $('.modal_wrap.detailPop')
+        detailPop.css('display', 'block')
+        $(`.modal_wrap.detailPop .modal_close,
+            .modal_wrap.detailPop .close_btn`).on('click', () => {
+            detailPop.css('display', 'none')
+        })
+
+        $('.modal_wrap.detailPop .confirm_btn').on('click', () => {
+            console.log('callback')
+            detailPop.css('display', 'none')
+        })
+    }
+</script>
+</body>
+</html>
