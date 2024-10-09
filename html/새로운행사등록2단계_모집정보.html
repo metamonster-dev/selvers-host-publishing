@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이스 메이트</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="main_logo">
+                <a href="#none">
+                    <img src="../assets/images/logo/main_logo_w.png" alt="마이스 메이트">
+                </a>
+            </h1>
+            <div class="btn_wrap">
+                <button class="my_btn"></button>
+                <button class="btn white round">대시보드</button>
+                <button class="btn blue round">AI챗봇</button>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+    
+    <!-- container -->
+    <div class="container">
+        <div class="lnb_area">
+            <div class="lnb02_wrap">
+                <div class="user_area">
+                    <div class="img">
+                        <img src="../assets/images/dummy/user_logo_dummy.png">
+                    </div>
+                    <div class="user_name">
+                        <div class="name">마인즈그라운드</div>
+                        <div class="admini">마스터</div>
+                    </div>
+                </div>
+                <div class="title_tag">2024 대한민국 농업박람회</div>
+                <ul class="lnb02">
+                    <li>
+                        <a href="#none" class="depth01 active">
+                            행사 상세설정
+                            <i class="arrow_b_icon"></i>
+                        </a>
+                        <div class="depth02_list active">
+                            <a href="#none" class="depth02">기본정보</a>
+                            <a href="#none" class="depth02">상세페이지</a>
+                            <a href="#none" class="depth02 active">모집정보</a>
+                            <a href="#none" class="depth02">사전설문</a>
+                            <a href="#none" class="depth02">FAQ & 문의</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01">참가자 관리</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01">참가기업 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont_area">
+            <div class="cont_panel type2">
+                <div class="tit_wrap">
+                    <h2 class="fs_40">모집정보</h2>
+                </div>
+                <div class="tit_wrap mt_12">
+                    <h3 class="fs_18">행사 신청을 위해 모집 방법 및 수집할 정보를 입력해주세요.</h3>
+                </div>
+
+
+                <div class="tit_wrap mt_62">
+                    <h3 class="fs_20">모집 기간 <i class="col_red">*</i></h3>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="w_767 dis_flex gap10">
+                        <div class="date_inp_wrap flex1">
+                            <input class="w_full" type="text" readonly="" placeholder="시작 날짜">
+                            <input type="date">
+                        </div>
+                        <div class="flex1">
+                            <input class="w_full" type="number" placeholder="시작 시간">
+                        </div>
+                        <div class="date_inp_wrap flex1">
+                            <input class="w_full" type="text" readonly="" placeholder="종료 날짜">
+                            <input type="date">
+                        </div>
+                        <div class="flex1">
+                            <input class="w_full" type="number" placeholder="종료 시간">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tit_wrap mt_25">
+                    <h3 class="fs_20">모집 방법 <i class="col_red">*</i></h3>
+                </div>
+                <div class="tit_wrap mt_4">
+                    <h3 class="fs_12">단체 신청 진행 시, 선택하신 수집 정보를 기반으로 한 엑셀 양식을 제공합니다.</h3>
+                </div>
+
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="dis_flex w_767 gap11">
+                        <div class="checkbox02 flex1">
+                            <input id="rad00_1" type="radio" name="rad00">
+                            <label for="rad00_1">개인 신청</label>
+                        </div>
+                        <div class="checkbox02 flex1">
+                            <input id="rad00_2" type="radio" name="rad00">
+                            <label for="rad00_2">단체 신청</label>
+                        </div>
+                        <div class="checkbox02 flex1">
+                            <input id="rad00_3" type="radio" name="rad00">
+                            <label for="rad00_3">개인/단체 신청 모두</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tit_wrap mt_25">
+                    <h3 class="fs_20">수집 정보 <i class="col_red">*</i></h3>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_1" type="checkbox" required>
+                        <label for="chk03_1">이름</label>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_2" type="checkbox" required>
+                        <label for="chk03_2">이메일</label>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_3" type="checkbox" required>
+                        <label for="chk03_3">휴대전화 번호</label>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_4" type="checkbox" required>
+                        <label for="chk03_4">소속 (회사/기관/학교명)</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_5" type="checkbox" required>
+                        <label for="chk03_5">부서</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_6" type="checkbox" required>
+                        <label for="chk03_6">직함</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_7" type="checkbox">
+                        <label for="chk03_7">성별</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_8" type="checkbox">
+                        <label for="chk03_8">나이</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div class="dis_flex align_start justify_between pr_52 mt_10">
+                    <div class="checkbox02 w_767">
+                        <input id="chk03_9" type="checkbox">
+                        <label for="chk03_9">거주 지역</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+
+                <div class="dis_flex justify_between mt_48">
+                    <div class="btn_wrap">
+                    </div>
+                    <div class="btn_wrap gap23">
+                        <button class="btn blue_bor">임시 저장</button>
+                        <button class="btn dark_blue">다음</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+    
+</div>    
+<script src="../assets/js/common.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

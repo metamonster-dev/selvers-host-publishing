@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이스 메이트</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="main_logo">
+                <a href="#none">
+                    <img src="../assets/images/logo/main_logo_w.png" alt="마이스 메이트">
+                </a>
+            </h1>
+            <div class="btn_wrap">
+                <button class="my_btn"></button>
+                <button class="btn white round">대시보드</button>
+                <button class="btn blue round">AI챗봇</button>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+    
+    <!-- container -->
+    <div class="container">
+        <div class="login_pagi">
+            <div class="inner">
+                <div class="login_tit">
+                    <span>행사등록을 위해 추가정보를 입력해주세요</span>
+                </div>
+                <div class="login_inp">
+                    <p class="fs_16 fw_500">회사명</p>
+                    <input type="text" class="w_full mt_12" placeholder="회사명 입력">
+                    <p class="fs_16 fw_500 mt_25">사업자등록번호</p>
+                    <div class="mt_12 dis_flex gap21">
+                        <input type="number" class="w_96">
+                        <input type="number" class="w_72">
+                        <input type="number" class="w_72 flex1">
+                    </div>
+                    <p class="fs_16 fw_500 mt_25">
+                        사업자등록증&nbsp;
+                        <span class="col_green fs_12">*pdf 또는 png 파일로 업로드 해주세요.</span>
+                    </p>
+                    <div class="mt_12 dis_flex gap21">
+                        <input id="file01txt" type="text" class="flex1 type_w" readonly placeholder="파일을 업로드 해주세요.">
+                        <input id="file01" type="file" class="hide">
+                        <label for="file01" class="w_72 btn dark_blue fs_14">업로드</label>
+                    </div>
+                    <p class="fs_16 fw_500 mt_25">담당자 이름</p>
+                    <input type="text" class="w_full mt_12" placeholder="성함">
+                    <div class="dis_flex gap20 mt_25">
+                        <div class="flex1">
+                            <p class="fs_16 fw_500">소속 부서</p>
+                            <input type="text" class="w_full mt_12" placeholder="소속 부서">
+                        </div>
+                        <div class="flex1">
+                            <p class="fs_16 fw_500">직책</p>
+                            <input type="text" class="w_full mt_12" placeholder="직책">
+                        </div>
+                    </div>
+                    <p class="fs_16 fw_500 mt_25">연락처</p>
+                    <input type="text" class="w_full mt_12" placeholder="핸드폰 번호 입력">
+                </div>
+                
+                <div class="btn_wrap mt_32">
+                    <a href="" class="btn dark_blue fs_14">제출</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+    
+</div>    
+<script src="../assets/js/common.js"></script>
+<script>
+    $(function(){
+        $('#file01').on('change', function(){
+            let val = $(this).val().split('/').pop().split('\\').pop();
+            $('#file01txt').val(val)
+        })
+    })
+</script>
+</body>
+</html>

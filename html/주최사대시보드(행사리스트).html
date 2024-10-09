@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이스 메이트</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="main_logo">
+                <a href="#none">
+                    <img src="../assets/images/logo/main_logo_w.png" alt="마이스 메이트">
+                </a>
+            </h1>
+            <div class="btn_wrap">
+                <button class="my_btn"></button>
+                <button class="btn white round">대시보드</button>
+                <button class="btn blue round">AI챗봇</button>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+    
+    <!-- container -->
+    <div class="container">
+        <div class="lnb_area">
+            <div class="lnb02_wrap">
+                <div class="user_area">
+                    <div class="img">
+                        <img src="../assets/images/dummy/user_logo_dummy.png">
+                    </div>
+                    <div class="user_name">
+                        <div class="name">마인즈그라운드</div>
+                        <div class="admini">마스터</div>
+                    </div>
+                </div>
+                <button class="add_new_btn">+  새로운 행사 등록하기</button>
+                <ul class="lnb01">
+                    <li>
+                        <a href="#none" class="depth01 active">나의 행사 리스트</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont_area">
+            <div class="history_tit">
+                <a class="item" href="#none">나의 행사 리스트</a>
+            </div>
+            <div class="cont_panel">
+                <div class="dashboard_panel_wrap">
+                    <ul>
+                        <li>
+                            <div class="tit">모집중인 행사</div>
+                            <div class="num_wrap">
+                                <span class="num">543</span>
+                                <span>개</span>
+                            </div>
+                            <div class="increase">+8</div>
+                        </li>
+                        <li>
+                            <div class="tit">승인 대기중인 행사</div>
+                            <div class="num_wrap">
+                                <span class="num">21</span>
+                                <span>개</span>
+                            </div>
+                            <div class="increase">+19</div>
+                        </li>
+                        <li>
+                            <div class="tit">수정중인 행사</div>
+                            <div class="num_wrap">
+                                <span class="num">10</span>
+                                <span>개</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tit">누적 행사 수</div>
+                            <div class="num_wrap">
+                                <span class="num">1,234</span>
+                                <span>명</span>
+                            </div>
+                            <div class="increase">+3</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_wrap mt_20">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="160px">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="txt_left">기간</th>
+                                <td>
+                                    <div class="dis_inblock">
+                                        <select class="btn border_w w_96">
+                                            <option value="0">등록일</option>
+                                        </select>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad01" class="hide">
+                                        <label for="rad01" class="btn border_w">오늘</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad02" class="hide">
+                                        <label for="rad02" class="btn border_w">어제</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad03" class="hide" checked>
+                                        <label for="rad03" class="btn border_w">7일</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad04" class="hide">
+                                        <label for="rad04" class="btn border_w">1개월</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input type="radio" name="rad" id="rad05" class="hide">
+                                        <label for="rad05" class="btn border_w">전체</label>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input id="date01" type="date" class="small w_104" value="2024-08-26">
+                                        <label for="date01" class="date_icon"></label>
+                                    </div>
+                                    <div class="dis_inblock">&nbsp;~&nbsp;</div>
+                                    <div class="dis_inblock">
+                                        <input id="date02" type="date" class="small w_104" value="2024-08-26">
+                                        <label for="date02" class="date_icon"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="txt_left">검색</th>
+                                <td>
+                                    <div class="dis_inblock">
+                                        <select class="btn border_w w_96">
+                                            <option value="0">승인대기</option>
+                                        </select>
+                                    </div>
+                                    <div class="dis_inblock">
+                                        <input class="small search w_548" type="text" placeholder="전체">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn_wrap mt_18">
+                    <button class="btn small w_83 light_blue">검색</button>
+                    <button class="btn small w_83 light_gray ml_4">초기화</button>
+                </div>
+
+                <div class="tit_wrap mt_12">
+                    <div>
+                        <h3 class="tit">
+                            <span>전체</span> 
+                            <span class="col_gray">검색결과</span>
+                            <span class="fs_16">[총 회원수 9,999명]</span>
+                        </h3>
+                        <button class="sort_btn">정렬</button>
+                    </div>
+                    <div>
+                        <button class="mr_22">삭제</button>
+                    </div>
+                </div>
+
+                <div class="table_wrap mt_22">
+                    <table class="type1">
+                        <colgroup>
+                            <col width="16px">
+                            <col width="150px">
+                            <col width="*">
+                            <col width="200px">
+                            <col width="200px">
+                            <col width="140px">
+                            <col width="120px">
+                            <col width="120px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>행사번호</th>
+                                <th class="txt_left">행사명</th>
+                                <th>행사 일시</th>
+                                <th>행사 개설일</th>
+                                <th></th>
+                                <th>미리보기</th>
+                                <th>진행 상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk01" type="checkbox">
+                                        <label for="t_chk01"></label>
+                                    </div>
+                                </td>
+                                <td>000001</td>
+                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td>08월24일(토) 10:00</td>
+                                <td>07월01일(월) 10:00</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn small gray w_72">미리보기</button>
+                                </td>
+                                <td>
+                                    <i class="btn small brighter_gray w_72">모집중</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk02" type="checkbox">
+                                        <label for="t_chk02"></label>
+                                    </div>
+                                </td>
+                                <td>000001</td>
+                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td>08월24일(토) 10:00</td>
+                                <td>07월01일(월) 10:00</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn small gray w_72">미리보기</button>
+                                </td>
+                                <td>
+                                    <i class="btn small yellow w_72">수정중</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk03" type="checkbox">
+                                        <label for="t_chk03"></label>
+                                    </div>
+                                </td>
+                                <td>000001</td>
+                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td>08월24일(토) 10:00</td>
+                                <td>07월01일(월) 10:00</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn small gray w_72">미리보기</button>
+                                </td>
+                                <td>
+                                    <i class="btn small brighter_blue w_72">승인대기</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk04" type="checkbox">
+                                        <label for="t_chk04"></label>
+                                    </div>
+                                </td>
+                                <td>000001</td>
+                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td>08월24일(토) 10:00</td>
+                                <td>07월01일(월) 10:00</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn small gray w_72">미리보기</button>
+                                </td>
+                                <td>
+                                    <i class="btn small gray w_72">마감</i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination mt_80">
+                    <a href="#none" class="pagi_prev"></a>
+                    <a href="#none" class="num active">1</a>
+                    <a href="#none" class="num">2</a>
+                    <a href="#none" class="num">3</a>
+                    <a href="#none" class="num">4</a>
+                    <a href="#none" class="num">5</a>
+                    <a href="#none" class="num">6</a>
+                    <a href="#none" class="num">7</a>
+                    <a href="#none" class="num">8</a>
+                    <a href="#none" class="num">9</a>
+                    <a href="#none" class="num">10</a>
+                    <a href="#none" class="pagi_next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+    
+</div>    
+<script src="../assets/js/common.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

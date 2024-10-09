@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이스 메이트</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <style>
+        .cont_panel > div{padding-top:10px;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <div class="inner">
+
+            <h1 class="main_logo">
+                <a href="#none">
+                    <img src="../assets/images/logo/main_logo_w.png" alt="마이스 메이트">
+                </a>
+            </h1>
+            <div class="btn_wrap">
+                <button class="my_btn"></button>
+                <button class="btn white round">대시보드</button>
+                <button class="btn blue round">AI챗봇</button>
+                <button class="btn blue round">로그아웃</button>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+    
+    <!-- container -->
+    <div class="container">
+        <div class="lnb_area">
+            <ul class="lnb01">
+                <li>
+                    <a href="#none" class="depth01">
+                        회원관리
+                        <i class="arrow_b_icon"></i>
+                    </a>
+                    <div class="depth02_list">
+                        <a href="#none" class="depth02">회원 리스트</a>
+                        <a href="#none" class="depth02">기업회원 리스트</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="depth01">
+                        행사관리
+                        <i class="arrow_b_icon"></i>
+                    </a>
+                    <div class="depth02_list">
+                        <a href="#none" class="depth02">행사 리스트</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none" class="depth01">
+                        배너관리
+                        <i class="arrow_b_icon"></i>
+                    </a>
+                    <div class="depth02_list">
+                        <a href="#none" class="depth02">메인배너</a>
+                        <a href="#none" class="depth02">띠배너</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="lnb01">
+                <li>
+                    <a href="#none" class="depth01 active">나의 행사 리스트</a>
+                </li>
+            </ul>
+
+            <div class="lnb02_wrap">
+                <div class="user_area">
+                    <div class="img">
+                        <img src="../assets/images/dummy/user_logo_dummy.png">
+                    </div>
+                    <div class="user_name">
+                        <div class="name">마인즈그라운드</div>
+                        <div class="admini">마스터</div>
+                    </div>
+                </div>
+                <div class="title_tag">2024 대한민국 농업박람회</div>
+                <ul class="lnb02">
+                    <li>
+                        <a href="#none" class="depth01">
+                            행사 상세설정
+                            <i class="arrow_b_icon"></i>
+                        </a>
+                        <div class="depth02_list">
+                            <a href="#none" class="depth02">기본정보</a>
+                            <a href="#none" class="depth02">상세페이지</a>
+                            <a href="#none" class="depth02">모집정보</a>
+                            <a href="#none" class="depth02">사전설문</a>
+                            <a href="#none" class="depth02">FAQ & 문의</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01">참가자 관리</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="depth01">참가기업 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont_area">
+            <div class="history_tit">
+                <a class="item" href="#none">1DEPTH</a>
+                <a class="item" href="#none">2DEPTH</a>
+                <a class="item" href="#none">3DEPTH</a>
+                <i class="btn light_blue small">승인대기</i>
+            </div>
+            <div class="cont_panel">
+                <div class="tit_wrap">
+                    <h3 class="tit">타이틀 영역</h3>
+                </div>
+                <div class="tit_wrap">
+                    <div>
+                        <h3 class="tit">
+                            <span>타이틀</span> 
+                            <span class="col_gray">검색결과</span>
+                            <span class="fs_16">[총 회원수 9,999명]</span>
+                        </h3>
+                        <button class="sort_btn">정렬</button>
+                    </div>
+                    <div>
+                        <button>탈퇴</button>
+                        <button class="ml_22">삭제</button>
+                    </div>
+                </div>
+                <div class="tit_wrap">
+                    <h3 class="tit02">타이틀 <i class="col_red">*</i></h3>
+                </div>
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">inputs</h3>
+                </div>
+                <div>
+                    <input class="w_full" type="text" value="기본 인풋">
+                </div>
+                <div>
+                    <div class="date_inp_wrap">
+                        <input class="w_full" type="text" readonly placeholder="행사 시작 일자를 선택해주세요.">
+                        <input class="" type="date">
+                    </div>
+                </div>
+                <div>
+                    <div class="num_inp_wrap">
+                        <input type="number" placeholder="행사 종료 시간을 입력해주세요.">
+                        <button class="increase"></button>
+                        <button class="decrease"></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="checkbox02 w_full">
+                        <input id="chk02" type="checkbox" required>
+                        <label for="chk02">이름</label>
+                        <button class="required_toggle_btn">필수<i></i></button>
+                    </div>
+                </div>
+                <div>
+                    <select class="w_full">
+                        <option value="0">농축산 · 식음료</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="small w_full" type="text" value="작은 인풋">
+                </div>
+                <div>
+                    <div class="dis_flex">
+                        <input id="date01" type="date" class="small w_104" value="2024-08-26">
+                        <label for="date01" class="date_icon"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="checkbox">
+                        <input id="chk01" type="checkbox">
+                        <label for="chk01">
+                            체크박스 커스텀
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <select class="btn border_w">
+                        <option value="0">회원유형</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" name="rad" id="rad01" class="hide">
+                    <label for="rad01" class="btn border_w">오늘</label>
+                    <input type="radio" name="rad" id="rad02" class="hide">
+                    <label for="rad02" class="btn border_w">어제</label>
+                    <input type="radio" name="rad" id="rad03" class="hide">
+                    <label for="rad03" class="btn border_w">7일</label>
+                </div>
+                <div>
+                    <input type="file" id="fileInp01" class="hide">
+                    <label for="fileInp01" class="file_inp">0 / 1</label>
+                </div>
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">buttons</h3>
+                </div>
+                <div>
+                    <button class="btn white">btn white</button>
+                    <button class="btn blue">btn blue</button>
+                    <button class="btn light_blue">btn light_blue</button>
+                    <button class="btn gray">btn gray</button>
+                </div>
+                <div>
+                    <button class="btn small white">btn small white</button>
+                    <button class="btn small blue">btn small blue</button>
+                    <button class="btn small light_blue">btn small light_blue</button>
+                    <button class="btn small gray">btn small gray</button>
+                </div>
+                <div>
+                    <button class="btn round white">btn round white</button>
+                    <button class="btn round blue">btn round blue</button>
+                    <button class="btn round light_blue">btn round light_blue</button>
+                    <button class="btn round gray">btn round gray</button>
+                </div>
+                <div>
+                    <button class="btn border_w">오늘</button>
+                </div>
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">tables</h3>
+                </div>
+                <div class="table_wrap">
+                    <table class="type1">
+                        <thead>
+                            <tr>
+                                <th>th</th>
+                                <th>th</th>
+                                <th>th</th>
+                                <th>th</th>
+                                <th>th</th>
+                                <th>th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk01" type="checkbox">
+                                        <label for="t_chk01">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox">
+                                        <input id="t_chk02" type="checkbox">
+                                        <label for="t_chk02">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                                <td>td</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_wrap">
+                    <table class="type2">
+                        <colgroup>
+                            <col width="135px">
+                            <col width="*">
+                            <col width="135px">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>th</th>
+                                <td>td</td>
+                                <th>th</th>
+                                <td>td</td>
+                            </tr>
+                            <tr>
+                                <th>th</th>
+                                <td>td</td>
+                                <th>th</th>
+                                <td>td</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_wrap">
+                    <table class="type3">
+                        <colgroup>
+                            <col width="160px">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>th</th>
+                                <td>td</td>
+                            </tr>
+                            <tr>
+                                <th>th</th>
+                                <td>td</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">pagination</h3>
+                </div>
+                <div>
+                    <div class="pagination">
+                        <a href="#none" class="pagi_prev"></a>
+                        <a href="#none" class="num active">1</a>
+                        <a href="#none" class="num">2</a>
+                        <a href="#none" class="num">3</a>
+                        <a href="#none" class="num">4</a>
+                        <a href="#none" class="num">5</a>
+                        <a href="#none" class="num">6</a>
+                        <a href="#none" class="num">7</a>
+                        <a href="#none" class="num">8</a>
+                        <a href="#none" class="num">9</a>
+                        <a href="#none" class="num">10</a>
+                        <a href="#none" class="pagi_next"></a>
+                    </div>
+                </div>
+
+                
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">etc</h3>
+                </div>
+                <div>
+                    <div class="survey_card w_767">
+                        <div class="head">
+                            <input type="text" placeholder="설문 제목을 입력해주세요.">
+                            <select>
+                                <option value="1" selected="">단일 선택</option>
+                                <option value="2">다중 선택</option>
+                                <option value="3">장문</option>
+                            </select>
+                        </div>
+                        <div class="body">
+                            <div class="option_tit">옵션 1</div>
+                            <div class="option_tit">
+                                <input type="text" placeholder="옵션을 입력해주세요.">
+                            </div>
+                            <button class="option_add_btn">옵션 추가</button>
+                        </div>
+                        <div class="btm">
+                            <button class="delete_btn"></button>
+                            <i class="bor_line"></i>
+                            <button class="required_toggle_btn active">필수<i></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="survey_card w_767">
+                        <div class="head">
+                            <input type="text" placeholder="Q. 제목을 입력해주세요.">
+                        </div>
+                        <div class="body">
+                            <input type="text" placeholder="A. 답변을 입력해주세요.">
+                        </div>
+                        <div class="btm">
+                            <button class="file_btn"></button>
+                            <button class="delete_btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="border_item_list w_767">
+                        <li>
+                            <span class="tit">기본정보</span>
+                            <button class="btn gray">작성완료</button>
+                        </li>
+                        <li class="blue">
+                            <span class="tit">기본정보</span>
+                            <span class="state">작성 완료</span>
+                            <button class="btn gray">작성하기</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tit_wrap mt_30">
+                    <h3 class="tit">popup</h3>
+                </div>
+                <div>
+                    <button class="btn blue" onclick="customConfirm()">커스텀 Confirm 팝업</button>
+                    <button class="btn blue" onclick="customAlert()">커스텀 alert 팝업</button>
+                    <button class="btn blue" onclick="customToast()">커스텀 toast 팝업</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+    
+</div>    
+<script src="../assets/js/common.js"></script>
+<script>
+    function customConfirm(){ 
+        action_pop.confirm({
+            title:'confirm TEXT<br/>confirm TEXT',
+            callback: function(){
+                console.log('confirm 팝업 콜백')
+            }
+        })
+    }  
+
+    function customAlert(){ 
+        action_pop.alert({
+            title:'alert TEXT<br/>alert TEXT',
+            callback: function(){
+                console.log('alert 팝업 콜백')
+            }
+        })
+    }  
+    function customToast(){
+        action_pop.toast('toast TEXT')
+    } 
+  
+</script>
+</body>
+</html>
