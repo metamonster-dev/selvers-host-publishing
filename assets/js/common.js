@@ -54,7 +54,13 @@ $(function () {
         }
     })
 
-    
+
+    // 이벤트 버블링 차단
+    $('.checkbox').on('click', function(event){
+        event.stopPropagation()
+    })
+
+
 });
 
 let timer;

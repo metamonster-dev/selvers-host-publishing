@@ -42,7 +42,7 @@
                         <div class="admini">마스터</div>
                     </div>
                 </div>
-                <button class="add_new_btn">+  새로운 행사 등록하기</button>
+                <a href="./새로운행사등록1단계.html" class="add_new_btn">+  새로운 행사 등록하기</a>
                 <ul class="lnb01">
                     <li>
                         <a href="#none" class="depth01 active">나의 행사 리스트</a>
@@ -103,7 +103,8 @@
                                 <td>
                                     <div class="dis_inblock">
                                         <select class="btn border_w w_96">
-                                            <option value="0">등록일</option>
+                                            <option value="1">등록일</option>
+                                            <option value="2">행사 게시일</option>
                                         </select>
                                     </div>
                                     <div class="dis_inblock">
@@ -142,7 +143,11 @@
                                 <td>
                                     <div class="dis_inblock">
                                         <select class="btn border_w w_96">
-                                            <option value="0">승인대기</option>
+                                            <option value="1">승인대기</option>
+                                            <option value="2">수정중</option>
+                                            <option value="3">모집중</option>
+                                            <option value="4">마감</option>
+                                            <option value="5">행사종료</option>
                                         </select>
                                     </div>
                                     <div class="dis_inblock">
@@ -168,7 +173,7 @@
                         <button class="sort_btn">정렬</button>
                     </div>
                     <div>
-                        <button class="mr_22">삭제</button>
+                        <button class="mr_22" onclick="confirm01()">삭제</button>
                     </div>
                 </div>
 
@@ -205,12 +210,16 @@
                                     </div>
                                 </td>
                                 <td>000001</td>
-                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td class="txt_left">
+                                    <a href="./행사선택_승인대기,마감,행사종료.html">
+                                        2024 미래 농업 엑스포
+                                    </a>
+                                </td>
                                 <td>08월24일(토) 10:00</td>
                                 <td>07월01일(월) 10:00</td>
                                 <td></td>
                                 <td>
-                                    <button class="btn small gray w_72">미리보기</button>
+                                    <a href="./미리보기.html" class="btn small gray w_72">미리보기</a>
                                 </td>
                                 <td>
                                     <i class="btn small brighter_gray w_72">모집중</i>
@@ -224,12 +233,16 @@
                                     </div>
                                 </td>
                                 <td>000001</td>
-                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td class="txt_left">
+                                    <a href="./행사선택_승인대기,마감,행사종료.html">
+                                        2024 미래 농업 엑스포
+                                    </a>
+                                </td>
                                 <td>08월24일(토) 10:00</td>
                                 <td>07월01일(월) 10:00</td>
                                 <td></td>
                                 <td>
-                                    <button class="btn small gray w_72">미리보기</button>
+                                    <a href="./미리보기.html" class="btn small gray w_72">미리보기</a>
                                 </td>
                                 <td>
                                     <i class="btn small yellow w_72">수정중</i>
@@ -243,12 +256,16 @@
                                     </div>
                                 </td>
                                 <td>000001</td>
-                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td class="txt_left">
+                                    <a href="./행사선택_승인대기,마감,행사종료.html">
+                                        2024 미래 농업 엑스포
+                                    </a>
+                                </td>
                                 <td>08월24일(토) 10:00</td>
                                 <td>07월01일(월) 10:00</td>
                                 <td></td>
                                 <td>
-                                    <button class="btn small gray w_72">미리보기</button>
+                                    <a href="./미리보기.html" class="btn small gray w_72">미리보기</a>
                                 </td>
                                 <td>
                                     <i class="btn small brighter_blue w_72">승인대기</i>
@@ -262,12 +279,16 @@
                                     </div>
                                 </td>
                                 <td>000001</td>
-                                <td class="txt_left">2024 미래 농업 엑스포</td>
+                                <td class="txt_left">
+                                    <a href="./행사선택_승인대기,마감,행사종료.html">
+                                        2024 미래 농업 엑스포
+                                    </a>
+                                </td>
                                 <td>08월24일(토) 10:00</td>
                                 <td>07월01일(월) 10:00</td>
                                 <td></td>
                                 <td>
-                                    <button class="btn small gray w_72">미리보기</button>
+                                    <a href="./미리보기.html" class="btn small gray w_72">미리보기</a>
                                 </td>
                                 <td>
                                     <i class="btn small gray w_72">마감</i>
@@ -299,7 +320,14 @@
 </div>    
 <script src="../assets/js/common.js"></script>
 <script>
-    
+    function confirm01(){ 
+        action_pop.confirm({
+            title:'선택 [2건]을 [삭제]<br/>처리 하시겠습니까?',
+            callback: function(){
+                action_pop.toast('삭제 처리되었습니다.')
+            }
+        })
+    } 
 </script>
 </body>
 </html>

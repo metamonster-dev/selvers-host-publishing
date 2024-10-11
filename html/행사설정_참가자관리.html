@@ -50,18 +50,18 @@
                             <i class="arrow_b_icon"></i>
                         </a>
                         <div class="depth02_list">
-                            <a href="#none" class="depth02">기본정보</a>
-                            <a href="#none" class="depth02">상세페이지</a>
-                            <a href="#none" class="depth02">모집정보</a>
-                            <a href="#none" class="depth02">사전설문</a>
-                            <a href="#none" class="depth02">FAQ & 문의</a>
+                            <a href="./새로운행사등록2단계_기본정보.html" class="depth02">기본정보</a>
+                            <a href="./새로운행사등록2단계_상세페이지작성.html" class="depth02">상세페이지</a>
+                            <a href="./새로운행사등록2단계_모집정보.html" class="depth02">모집정보</a>
+                            <a href="./새로운행사등록2단계_사전설문.html" class="depth02">사전설문</a>
+                            <a href="./새로운행사등록2단계_FAQ문의.html" class="depth02">FAQ & 문의</a>
                         </div>
                     </li>
                     <li>
-                        <a href="#none" class="depth01 active">참가자 관리</a>
+                        <a href="./행사설정_참가자관리.html" class="depth01 active">참가자 관리</a>
                     </li>
                     <li>
-                        <a href="#none" class="depth01">참가기업 관리</a>
+                        <a href="./행사설정_참가기업관리.html" class="depth01">참가기업 관리</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +120,9 @@
                                 <td>
                                     <div class="dis_inblock">
                                         <select class="btn border_w">
-                                            <option value="0">신청 유형</option>
+                                            <option disabled selected>신청 유형</option>
+                                            <option value="1">개인신청</option>
+                                            <option value="2">단체신청</option>
                                         </select>
                                     </div>
                                     <div class="dis_inblock">
@@ -146,10 +148,6 @@
                         </h3>
                         <button class="sort_btn">정렬</button>
                     </div>
-                    <div>
-                        <button>수정</button>
-                        <button class="ml_22">삭제</button>
-                    </div>
                 </div>
 
                 <div class="table_wrap mt_22">
@@ -169,7 +167,7 @@
                             <tr>
                                 <th>
                                     <div class="checkbox">
-                                        <input id="t_chkAll" type="checkbox">
+                                        <input id="t_chkAll" type="checkbox" onchange="t_chkAll(event)">
                                         <label for="t_chkAll">
                                         </label>
                                     </div>
@@ -424,6 +422,13 @@
             console.log('callback')
             detailPop.css('display', 'none')
         })
+    }
+
+    function t_chkAll(e){
+        let _this = $(e.target)
+        let checked = _this.prop('checked')
+        let chkArr = _this.closest('table').find('tbody input[type="checkbox"]')
+        chkArr.prop('checked', checked)
     }
 </script>
 </body>

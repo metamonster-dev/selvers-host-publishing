@@ -485,6 +485,7 @@ input:checked + .btn.border_w{background-color:#fff; color:#1E9EFF}
 .lnb_area .lnb02 .depth01{font-size:16px; font-weight:700; color:#FFFFFF80; display:flex; align-items:center; justify-content:flex-start; gap:20px; padding:10px 29px; height:40px; border-radius:20px;}
 .lnb_area .lnb02 .depth02_list{max-height:0; padding-top:0; transition:all 1s; overflow:hidden;}
 .lnb_area .lnb02 .depth02_list .depth02{display:flex; width:100%; height:40px; align-items:center; padding-left:45px; border-radius:20px; color:#FFFFFF80;}
+.lnb_area .lnb02 .depth02_list .depth02 ~ .depth02{margin-top:10px;}
 .lnb_area .lnb02 .depth01.active,
 .lnb_area .lnb02 .depth01:hover{color:#fff; background-color:#FFFFFF1A;}
 .lnb_area .lnb02 > li:first-child .depth01.active,
@@ -516,6 +517,8 @@ table.type1 tbody td .btn.small{margin:-10px 0;}
 table table.type1 thead th{border:0; padding-bottom:0;}
 table table.type1 tbody td{border:0;}
 table table.type1 tbody tr:first-child td{padding-top:9.5px;}
+
+table i.btn.small{cursor:default;}
 
 table.type1 tbody td .banner_img{width:80px; height:45px; border-radius:10px; margin:0 auto;}
 table.type1 tbody td .banner_img img{width:100%; height:100%; object-fit:contain;}
@@ -551,6 +554,9 @@ table.type5 tbody td{font-size:18px; text-align:left; padding:9px 0;}
 .modal_wrap .modal_inner .modal_btn{margin-top:9px; display:flex; justify-content:center; align-items:center; gap:24px;}
 .modal_wrap .modal_inner .modal_btn > *{width:44px; font-size:16px; font-weight:700; width:134px; height:35px;}
 .modal_wrap .modal_inner .modal_btn .blue_bor.btn{color:#09338C}
+
+.modal_wrap.confirm .modal_inner .modal_btn > *,
+.modal_wrap.alert .modal_inner .modal_btn > *{color:#000;}
 
 .modal_wrap.prompt01 textarea{border:.5px solid #969696; border-radius:10px; background-color:#F7F7F7; padding:10px 22px; font-size:12px;}
 .modal_wrap.prompt01 textarea::placeholder{color:#000;}
